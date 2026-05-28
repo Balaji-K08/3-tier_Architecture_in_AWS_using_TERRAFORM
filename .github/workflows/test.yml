@@ -1,0 +1,20 @@
+name: test-1
+on: [push] # Trigger on every push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Run a script
+        run: echo "Build Runned"
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: run test
+        run: echo "Test Runned"
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: run deploy
+        run: echo "Deploy Runned"
+  
